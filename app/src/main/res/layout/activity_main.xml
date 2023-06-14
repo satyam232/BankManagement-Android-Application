@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/golden"
+    >
+
+    <TextView
+        android:id="@+id/textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Create Account"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.191" />
+
+    <EditText
+        android:id="@+id/acountno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+
+        android:hint="Account no"
+        android:drawableStart="@drawable/accountno"
+        android:inputType="number"
+        android:background="@drawable/round"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/textview"
+        app:layout_constraintStart_toStartOf="@+id/textview"
+        app:layout_constraintTop_toBottomOf="@+id/textview"
+        />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:hint="Name"
+        android:drawableStart="@drawable/name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/acountno"
+        app:layout_constraintStart_toStartOf="@+id/acountno"
+        app:layout_constraintTop_toBottomOf="@+id/acountno" />
+
+    <EditText
+        android:id="@+id/addharno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Aadhaar no"
+        android:background="@drawable/round"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:drawableStart="@drawable/addhar"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/phoneno"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/round"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:ems="10"
+        android:drawableStart="@drawable/phone"
+        android:hint="Phone no"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/addharno"
+        app:layout_constraintStart_toStartOf="@+id/addharno"
+        app:layout_constraintTop_toBottomOf="@+id/addharno" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:background="@drawable/round"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:hint="password"
+        android:drawableStart="@drawable/baseline_key_24"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/phoneno"
+        app:layout_constraintStart_toStartOf="@+id/phoneno"
+        app:layout_constraintTop_toBottomOf="@+id/phoneno" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/golden"
+        android:text="Sign UP"
+        android:background="@drawable/round"
+        app:layout_constraintEnd_toEndOf="@+id/password"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        app:rippleColor="@color/white" />
+
+    <TextView
+        android:id="@+id/donthaveacc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:text="Already have account?"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signup"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="@+id/signup"
+        app:layout_constraintTop_toBottomOf="@+id/signup"
+        app:layout_constraintVertical_bias="0.237" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Log In"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/donthaveacc"
+        app:layout_constraintEnd_toEndOf="@+id/signup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/donthaveacc"
+        app:layout_constraintTop_toTopOf="@+id/donthaveacc"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

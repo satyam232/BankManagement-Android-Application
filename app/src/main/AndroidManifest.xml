@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="BankManagement"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BankManagement"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".settings"
+            android:exported="false" />
+        <activity
+            android:name=".contactus"
+            android:exported="false" />
+        <activity
+            android:name=".DrawerBase"
+            android:exported="false" />
+        <activity
+            android:name=".PIN"
+            android:exported="false" />
+        <activity
+            android:name=".createPIN"
+            android:exported="false" />
+        <activity
+            android:name=".AccountBalance"
+            android:exported="false" />
+        <activity
+            android:name=".LoanServices"
+            android:exported="false" />
+        <activity
+            android:name=".TransferAmount"
+            android:exported="true" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AccountInfo"
+            android:exported="true" />
+        <activity
+            android:name=".mainpage"
+            android:exported="true" />
+        <activity
+            android:name=".LoginPage"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
